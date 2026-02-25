@@ -1,0 +1,4 @@
+import { Card } from '../ui/card';
+import { Badge } from '../ui/badge';
+const items=[{q:'Is this a CRM?',a:'No. LedgerWeek is a weekly operating system. It tracks only what protects income: delivery, pipeline, and invoices.'},{q:'Do I need integrations?',a:'Not for the MVP. Start manually. Integrations are an upgrade path once the habit sticks.'},{q:'What if I miss a week?',a:'Recovery Mode generates a 48-hour rescue plan and gets you back into rhythm.'}];
+export default function FAQ(){return <section className='mx-auto max-w-6xl px-4 py-12'><div className='mb-8'><Badge>FAQ</Badge><h2 className='mt-3 text-3xl font-semibold tracking-tight'>Clear answers.</h2></div><div className='grid gap-4 md:grid-cols-3'>{items.map(it=>(<Card key={it.q}><div className='font-semibold'>{it.q}</div><p className='mt-2 text-white/70'>{it.a}</p></Card>))}</div></section>}

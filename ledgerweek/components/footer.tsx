@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Footer(){return <footer className='border-t border-white/10'><div className='mx-auto max-w-6xl px-4 py-10 text-sm text-white/60'><div className='flex flex-col gap-2 md:flex-row md:items-center md:justify-between'><div>© {new Date().getFullYear()} LedgerWeek</div><div className='flex gap-4'><Link href='/privacy' className='hover:text-white'>Privacy</Link><Link href='/terms' className='hover:text-white'>Terms</Link></div></div></div></footer>}
